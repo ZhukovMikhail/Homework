@@ -1,4 +1,102 @@
-header {
-  height: 1050px;
-  background-color: red;
+* {
+  box-sizing: border-box;
+}
+
+.thumb-sun {
+  position: relative;
+  display: flex;
+  width: 3000px;
+  height: 800px;
+ 
+   background-image:linear-gradient(
+    to right, 
+    #3257d3 15%,
+    #9fd4f3 50%,
+    #f3af88 100%);
+  }
+}
+.sky {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+
+  width: 3000px;
+  height: 800px;
+}
+.img-sun {
+  height: 200px;
+  animation-name: tranform-sun;
+  animation-duration: 5000ms;
+  animation-timing-function: linear;
+  animation-direction: normal;
+  animation-iteration-count: infinite;
+}
+
+@keyframes tranform-sun {
+  0% {
+    transform: translate(0, 800px) rotatez(0deg);
+  }
+  50% {
+    transform: translate(1350px, 0px) rotatez(180deg);
+  }
+  100% {
+    transform: translate(2700px, 800px) rotatez(360deg);
+  }
+}
+.thumb-sea {
+  position: relative;
+  display: flex;
+  width: 3000px;
+  height: 500px;
+  background-color: rgba(88, 88, 184, 1);
+}
+
+.sea {
+  position: absolute;
+  transform: translateY(100px);
+  height: 500px;
+  width: 3000px;
+  background-image: url(https://clipart-best.com/img/sea/sea-clip-art-13.png);
+
+  background-repeat: repeat;
+  object-position: 450px 50%;
+}
+.ship-icon {
+  position: absolute;
+  top: -300px;
+  left: 0%;
+  height: 500px;
+  width: 500px;
+  fill: rgb(151, 147, 140);
+  stroke: rgb(51, 47, 41);
+  stroke-width: 0.4px;
+  animation-name: tranform-ship;
+  animation-duration: 10000ms;
+  animation-timing-function: cubic-bezier(.67,.22,.43,.8);
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+@keyframes tranform-ship {
+  0% {
+    transform: translateX(2200px);
+  }
+  49% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: rotatey(180deg);
+  }
+  99% {
+    transform: translateX(2200px) rotatey(180deg);
+  }
+  100% {
+    transform: translateX(2200px);
+  }
+}
+.island-icon {
+  position: absolute;
+  bottom: 200px;
+  right: 0%;
+  height: 500px;
+  width: 500px;
 }
