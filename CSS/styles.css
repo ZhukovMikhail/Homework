@@ -7,13 +7,13 @@
   display: flex;
   width: 3000px;
   height: 800px;
- 
-   background-image:linear-gradient(
-    to right, 
+
+  background-image: linear-gradient(
+    to right,
     #3257d3 15%,
     #9fd4f3 50%,
-    #f3af88 100%);
-  }
+    #f3af88 100%
+  );
 }
 .sky {
   position: absolute;
@@ -72,7 +72,7 @@
   stroke-width: 0.4px;
   animation-name: tranform-ship;
   animation-duration: 10000ms;
-  animation-timing-function: cubic-bezier(.67,.22,.43,.8);
+  animation-timing-function: cubic-bezier(0.67, 0.22, 0.43, 0.8);
   animation-iteration-count: infinite;
   animation-direction: normal;
 }
