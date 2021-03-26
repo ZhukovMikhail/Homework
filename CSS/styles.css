@@ -102,8 +102,8 @@
 }
 .dolfin {
   position: absolute;
-  left: 40px;
-  top: 60px;
+  top: 0;
+  left: 0;
 
   fill: rgb(11, 11, 68);
   animation: dolfin 5000ms linear 1000ms infinite;
