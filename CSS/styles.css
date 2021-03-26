@@ -1,7 +1,6 @@
 * {
   box-sizing: border-box;
 }
-
 .thumb-sun {
   position: relative;
   display: flex;
@@ -56,6 +55,7 @@
   transform: translateY(100px);
   height: 500px;
   width: 3000px;
+
   background-image: url(https://clipart-best.com/img/sea/sea-clip-art-13.png);
 
   background-repeat: repeat;
@@ -95,8 +95,50 @@
 }
 .island-icon {
   position: absolute;
-  bottom: 200px;
+  bottom: 300px;
   right: 0%;
   height: 500px;
   width: 500px;
+}
+.dolfin {
+  position: absolute;
+  left: 40px;
+  bottom: 40px;
+
+  fill: rgb(11, 11, 68);
+  animation: dolfin 6000ms linear 1000ms infinite;
+}
+.cranes {
+  width: 150px;
+  height: 150px;
+  animation: tranform-cranes 20000ms cubic-bezier(0.23, 0.99, 0.72, 1.02)
+    infinite;
+}
+@keyframes tranform-cranes {
+  0% {
+    transform: translate(-100px, -100px);
+  }
+
+  100% {
+    transform: translate(2500px, 700px) scale(0);
+  }
+}
+.wraper {
+  width: 3000px;
+  height: 1300px;
+  overflow: hidden;
+}
+@keyframes dolfin {
+  0% {
+    transform: translate(0px, 200px) rotate(-120deg);
+  }
+  25% {
+    transform: translate(100px, -100px) rotate(0deg);
+  }
+  50% {
+    transform: translate(200px, 200px) rotate(150deg);
+  }
+  100% {
+    transform: translate(200px, 200px) rotate(150deg);
+  }
 }
