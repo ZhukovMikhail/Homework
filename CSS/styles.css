@@ -106,7 +106,7 @@
   bottom: 40px;
 
   fill: rgb(11, 11, 68);
-  animation: dolfin 6000ms linear 1000ms infinite;
+  animation: dolfin 5000ms linear 1000ms infinite;
 }
 .cranes {
   width: 150px;
