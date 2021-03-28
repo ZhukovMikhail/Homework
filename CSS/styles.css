@@ -106,13 +106,12 @@
   left: 0;
 
   fill: rgb(11, 11, 68);
-  animation: dolfin 5000ms linear 1000ms infinite;
+  animation: dolfin 1000ms linear 1000ms infinite;
 }
 .dolfin2 {
   position: absolute;
   top: 50px;
   left: 1000px;
-
   fill: rgb(11, 11, 68);
   animation: dolfin 6000ms linear 3000ms infinite;
 }
@@ -138,7 +137,7 @@
 }
 @keyframes dolfin {
   0% {
-    transform: translate(0px, 200px) rotate(-120deg);
+    transform: translate(0px, 1000px) rotate(-120deg);
   }
   25% {
     transform: translate(100px, -100px) rotate(0deg);
