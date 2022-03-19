@@ -60,6 +60,7 @@
 
   background-repeat: repeat;
   object-position: 450px 50%;
+  z-index: 12000;
 }
 .ship-icon {
   position: absolute;
@@ -75,22 +76,24 @@
   animation-timing-function: cubic-bezier(0.67, 0.22, 0.43, 0.8);
   animation-iteration-count: infinite;
   animation-direction: normal;
+  z-index: 1;
 }
 @keyframes tranform-ship {
   0% {
-    transform: translateX(2200px);
+    transform: scale(1) translateX(2200px);
   }
   49% {
-    transform: translateX(0px);
+    transform: scale(0.2) translate(0px, -350px) rotateY(60deg);
   }
   50% {
-    transform: rotatey(180deg);
+    transform: scale(0.18) translate(0px, -400px) rotatey(180deg);
   }
+
   99% {
     transform: translateX(2200px) rotatey(180deg);
   }
   100% {
-    transform: translateX(2200px);
+    transform: scale(1) translateX(2200px) rotatey(180deg);
   }
 }
 .island-icon {
@@ -102,18 +105,19 @@
 }
 .dolfin {
   position: absolute;
-  top: 30px;
+  top: 40px;
   left: 0;
-
+  z-index: 1000;
   fill: rgb(11, 11, 68);
-  animation: dolfin 1000ms linear 1000ms infinite;
+  animation: dolfin 4500ms linear 500ms infinite;
 }
 .dolfin2 {
   position: absolute;
   top: 50px;
   left: 1000px;
   fill: rgb(11, 11, 68);
-  animation: dolfin 6000ms linear 3000ms infinite;
+  animation: dolfin 4500ms linear infinite;
+  z-index: 1000;
 }
 .cranes {
   width: 150px;
@@ -139,13 +143,10 @@
   0% {
     transform: translate(0px, 1000px) rotate(-120deg);
   }
-  25% {
-    transform: translate(100px, -100px) rotate(0deg);
-  }
   50% {
-    transform: translate(200px, 200px) rotate(150deg);
+    transform: translate(200px, -150px) rotate(-0deg);
   }
   100% {
-    transform: translate(200px, 200px) rotate(150deg);
+    transform: translate(400px, 400px) rotate(120deg);
   }
 }
